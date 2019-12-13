@@ -192,14 +192,14 @@ class TaskDetails(DetailView):
 	model = Task
 	context_object_name = 'task'
 
-def handler404(request, *args, **argv):
-    response = render_to_response('custom_404_view.html', {},
-                                  context_instance=RequestContext(request))
-    response.status_code = 404
-    return response
-
-def handler500(request, *args, **argv):
-    response = render_to_response('custom_404_view.html', {},
-                                  context_instance=RequestContext(request))
-    response.status_code = 500
-    return response
+# def handler404(request, *args, **argv):
+#     response = render_to_response('custom_404_view.html', {},
+#                                   context_instance=RequestContext(request))
+#     response.status_code = 404
+#     return response
+#
+# def handler500(request, *args, **argv):
+#     response = render_to_response('custom_404_view.html', {},
+#                                   context_instance=RequestContext(request))
+#     response.status_code = 500
+#     return response
